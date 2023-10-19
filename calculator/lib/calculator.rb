@@ -20,7 +20,7 @@ class Calculator
         end
     end
 
-    def doThing(operator_name, second_value)
+    def calculate(operator_name, second_value)
         operator = getOperator(operator_name)
         @current_value = operator.execute(@current_value, second_value)
     end
