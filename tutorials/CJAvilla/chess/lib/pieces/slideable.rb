@@ -2,6 +2,8 @@ module Slideable
     def available_moves
       moves = []
   
+      # move_dirs is defined where? as a method on any Piece base class that includes slideable
+      # oh it is no stepable too.. at least king
       move_dirs.each do |(dr, dc)|
         current_r, current_c = location
   

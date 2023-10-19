@@ -5,7 +5,10 @@ require_relative './lib/board.rb'
 require_relative './lib/player.rb'
 require_relative './lib/game.rb'
 
+# start_chess is a static method AKA class method
 b = Board.start_chess
+
+
 g = Game.new(
   b, 
   Player.new(:black), 
